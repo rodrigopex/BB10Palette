@@ -1,0 +1,22 @@
+<palette>
+    <category title="Functional"/>
+    <color title="" titleColor="" hexColor="#00b800"/>
+    <color title="" titleColor="" hexColor="#e6b400"/>
+    <color title="" titleColor="" hexColor="#d60000"/>
+    <category title="Background"/>
+    <color title="OBSIDIAN" titleColor="#fafafa" hexColor="#121212"/>
+    <color title="SNOW" titleColor="#262626" hexColor="#f8f8f8"/>
+    <color title="TITAN" titleColor="#fafafa" hexColor="#262626"/>
+    <category title="Text"/>
+    <color title="PRIMARY" titleColor="#fafafa" hexColor="#262626"/>
+    <color title="SECONDARY" titleColor="#fafafa" hexColor="#555555"/>
+    <color title="PRIMARY" titleColor="#262626" hexColor="#fafafa"/>
+    <color title="SECONDARY" titleColor="#262626" hexColor="#b1b1b1"/>
+    <category title="Application"/>
+    <color title="FRESH GREEN" titleColor="#fafafa" hexColor="#96b800"/>
+    <color title="BURNT ORANGE" titleColor="#fafafa" hexColor="#cc3f10"/>
+    <color title="SKY BLUE" titleColor="#fafafa" hexColor="#0098f0"/>
+    <color title="FUCHSIA PINK" titleColor="#fafafa" hexColor="#a30d7e"/>
+    <category title="Settings"/>
+    <color title="STATE BLUE" titleColor="#fafafa" hexColor="#667b94"/>
+</palette>

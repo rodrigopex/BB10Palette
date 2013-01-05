@@ -1,0 +1,89 @@
+import bb.cascades 1.0
+
+Sheet {
+    id: help
+    Page {
+        titleBar: TitleBar {
+            title: "Help"
+            dismissAction: ActionItem {
+                title: "Close"
+                onTriggered: {
+                    help.close()
+                    delete help
+                    console.log(help)
+                }
+            }
+        }
+        Container {
+            background: Color.create("#121212")
+            layout: DockLayout {
+            }
+            Container {
+                horizontalAlignment: HorizontalAlignment.Center
+                topPadding: 10
+                leftPadding: 10
+                rightPadding: 10
+                Container {
+                    layout: DockLayout {
+                    }
+                    layoutProperties: StackLayoutProperties {
+                        spaceQuota: 1
+                    }
+                    Label {
+                        text: "All the information of this application was extracted of the UI Guide."
+                        multiline: true
+                        verticalAlignment: VerticalAlignment.Center
+                        textStyle {
+                            color: Color.create("#fafafa")
+                            fontSizeValue: 11
+                            textAlign: TextAlign.Justify
+                        }
+                    }
+                }
+                Container {
+                    horizontalAlignment: HorizontalAlignment.Fill
+                    layoutProperties: StackLayoutProperties {
+                        spaceQuota: 1
+                    }
+                    Label {
+                        text: "Go to documentation"
+                        textStyle {
+                            color: Color.create("#b1b1b1")
+                            fontSizeValue: 8
+                            textAlign: TextAlign.Right
+                        }
+                    }
+                    Label {
+                        text: "https://developer.blackberry.com/design/"
+                        textStyle {
+                            color: Color.Green
+                            fontSizeValue: 6
+                            fontStyle: FontStyle.Italic
+                        }
+                        contextActions: ActionSet {
+                            InvokeActionItem {
+                                query {
+                                    mimeType: "text/url"
+                                    uri: "https://developer.blackberry.com/devzone/files/design/UI_Guidelines_BlackBerry_10.pdf"
+                                    invokeActionId: "bb.action.OPEN"
+                                }
+                            }
+                        }
+                    }
+                }
+                Container {
+                    horizontalAlignment: HorizontalAlignment.Fill
+                    layoutProperties: StackLayoutProperties {
+                        spaceQuota: 2
+                    }
+                    ImageView {
+                        scalingMethod: ScalingMethod.AspectFit
+                        imageSource: "images/bb10-logo.png"
+                        verticalAlignment: VerticalAlignment.Center
+                        horizontalAlignment: HorizontalAlignment.Center
+                    }
+                }
+            }
+        }
+    }
+}
